@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>Ejercicios 3</title>
+  </head>
+  <main>
+    <body class="bg-slate-300">
+      <div
+        class="container border border-1 border-gray-50 rounded-xl bg-white shadow-2xl mt-10 max-w-6xl mx-auto px-6 py-12"
+      >
+        <!--nav bar-->
+        <nav
+          class="nav flex text-center items-center justify-between font-bold"
+        >
+          <h3>Ejercicios de Typescript</h3>
+          <div class="md:flex md:space-x-8">
+            <div class="group">
+              <a href="./index.html">Home</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-blue-500"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="./ejercicio1.html">Ejercicio 1</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-blue-500"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="./ejercicio2.html">Ejercicio 2</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-blue-500"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="./ejercicio3.html">Ejercicio 3</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-blue-500"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="./ejercicio4.html">Ejercicio 4</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-blue-500"
+              ></div>
+            </div>
+          </div>
+        </nav>
+        <div class="min-h-screen flex items-center justify-center">
+          <div class="bg-white p-8 rounded-lg shadow-2xl border-1 w-full max-w-md">
+            <h1 class="text-2xl font-bold mb-6 text-center">
+              Registrar Canción
+            </h1>
+
+            <form id="formulario" class="space-y-4">
+              <div>
+                <label for="titulo" class="block font-medium">Título:</label>
+                <input
+                  type="text"
+                  id="titulo"
+                  required
+                  class="w-full border border-gray-300 rounded px-3 py-2"
+                  placeholder="Nombre de la canción"
+                />
+              </div>
+
+              <div>
+                <label for="genero" class="block font-medium">Género:</label>
+                <input
+                  type="text"
+                  id="genero"
+                  required
+                  class="w-full border border-gray-300 rounded px-3 py-2"
+                  placeholder="Género musical"
+                />
+              </div>
+
+              <div>
+                <label for="autor" class="block font-medium">Autor:</label>
+                <input
+                  type="text"
+                  id="autor"
+                  required
+                  class="w-full border border-gray-300 rounded px-3 py-2"
+                  placeholder="Nombre del autor"
+                />
+              </div>
+
+              <div class="flex space-x-4">
+                <button
+                  type="submit"
+                  class="flex-1 bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition"
+                >
+                  Enviar
+                </button>
+
+                <button
+                  type="button"
+                  id="btnLimpiar"
+                  class="flex-1 bg-gray-400 text-white py-2 rounded hover:bg-gray-500 transition"
+                >
+                  Limpiar
+                </button>
+              </div>
+            </form>
+
+            <div
+              id="resultado"
+              class="mt-6 p-4 bg-blue-100 rounded text-blue-900 text-sm"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <script type="module" src="src/ejercicio3.ts"></script>
+    </body>
+  </main>
+</html>

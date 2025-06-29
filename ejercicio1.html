@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>Ejercicio 1</title>
+  </head>
+  <body class="bg-slate-300">
+    <div
+      class="container border border-1 border-gray-50 rounded-xl bg-white shadow-2xl mt-10 max-w-6xl mx-auto px-6 py-12"
+    >
+      <!--nav bar-->
+      <nav class="nav flex text-center items-center justify-between font-bold">
+        <h3>Ejercicios de Typescript</h3>
+        <div class="md:flex md:space-x-8">
+          <div class="group">
+            <a href="./index.html">Home</a>
+            <div
+              class="mx-2 group-hover:border-b group-hover:border-blue-500"
+            ></div>
+          </div>
+          <div class="group">
+            <a href="./ejercicio1.html">Ejercicio 1</a>
+            <div
+              class="mx-2 group-hover:border-b group-hover:border-blue-500"
+            ></div>
+          </div>
+          <div class="group">
+            <a href="./ejercicio2.html">Ejercicio 2</a>
+            <div
+              class="mx-2 group-hover:border-b group-hover:border-blue-500"
+            ></div>
+          </div>
+          <div class="group">
+            <a href="./ejercicio3.html">Ejercicio 3</a>
+            <div
+              class="mx-2 group-hover:border-b group-hover:border-blue-500"
+            ></div>
+          </div>
+          <div class="group">
+            <a href="./ejercicio4.html">Ejercicio 4</a>
+            <div
+              class="mx-2 group-hover:border-b group-hover:border-blue-500"
+            ></div>
+          </div>
+        </div>
+      </nav>
+      <div class="container max-w-6xl mx-auto px-6 py-12">
+        <h1 id="encabezado" style="text-align: center; margin-bottom: 35px">
+          Encabezado por defecto
+        </h1>
+
+        <form id="formulario">
+          <label for="titulo"><strong>Título:</strong></label>
+          <input
+            type="text"
+            id="titulo"
+            value="Digite el encabezado"
+          /><br /><br />
+
+          <label for="color"><strong>Color de texto del body:</strong></label>
+          <input type="color" id="color" value="#000000" /><br /><br />
+
+          <label for="fuente"><strong>Fuente:</strong></label>
+          <select id="fuente">
+            <option value="Arial" selected>Arial</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Courier New">Courier New</option></select
+          ><br /><br />
+
+          <label for="alineacion"
+            ><strong>Alineación del título:</strong></label
+          >
+          <select id="alineacion">
+            <option value="center" selected>Centrado</option>
+            <option value="left">Izquierda</option>
+            <option value="right">Derecha</option></select
+          ><br /><br />
+
+          <button type="submit" class="button-formato">Aplicar cambios</button>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="src/ejercicio1.ts"></script>
+  </body>
+</html>

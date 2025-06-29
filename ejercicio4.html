@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>Ejercicios 4</title>
+  </head>
+  <main>
+    <body class="bg-slate-300">
+      <div
+        class="container border border-1 border-gray-50 rounded-xl bg-white shadow-2xl mt-10 max-w-6xl mx-auto px-6 py-12"
+      >
+        <!--nav bar-->
+        <nav
+          class="nav flex text-center items-center justify-between font-bold"
+        >
+          <h3>Ejercicios de Typescript</h3>
+          <div class="md:flex md:space-x-8">
+            <div class="group">
+              <a href="./index.html">Home</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-blue-500"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="./ejercicio1.html">Ejercicio 1</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-blue-500"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="./ejercicio2.html">Ejercicio 2</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-blue-500"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="./ejercicio3.html">Ejercicio 3</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-blue-500"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="./ejercicio4.html">Ejercicio 4</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-blue-500"
+              ></div>
+            </div>
+          </div>
+        </nav>
+        <div class="max-w-xl mx-auto bg-white mt-10 p-6 rounded shadow">
+          <h1 class="text-2xl font-bold text-center mb-4">Crear Cliente</h1>
+          <form id="formCliente" class="space-y-4">
+            <input
+              type="text"
+              id="nombre"
+              placeholder="Nombre"
+              required
+              class="w-full border rounded px-3 py-2"
+            />
+            <input
+              type="number"
+              id="cantidad"
+              placeholder="Cantidad inicial"
+              required
+              class="w-full border rounded px-3 py-2"
+            />
+            <input
+              type="text"
+              id="tipo"
+              placeholder="Tipo de cuenta"
+              required
+              class="w-full border rounded px-3 py-2"
+            />
+            <input
+              type="text"
+              id="numero"
+              placeholder="Número de cuenta"
+              required
+              class="w-full border rounded px-3 py-2"
+            />
+            <button
+              type="submit"
+              class="w-full bg-blue-600 text-white py-2 rounded"
+            >
+              Crear Cuenta
+            </button>
+          </form>
+
+          <div id="datosCliente" class="mt-6"></div>
+
+          <hr class="my-6" />
+
+          <h2 class="text-xl font-semibold mb-4 text-center">Operaciones</h2>
+      <form id="formOperaciones" class="space-y-4">
+        <input type="number" id="valorOperacion" placeholder="Monto" required class="w-full border rounded px-3 py-2" />
+
+        <select id="tipoOperacion" class="w-full border rounded px-3 py-2">
+          <option value="depositar">Depositar</option>
+          <option value="retirar">Retirar</option>
+        </select>
+
+        <div class="flex space-x-2">
+          <button type="submit" id="btnEjecutar" class="flex-1 bg-blue-600 text-white py-2 rounded">Realizar Transacción</button>
+          <button type="button" id="btnLimpiar" class="flex-1 bg-gray-400 text-white py-2 rounded">Limpiar</button>
+        </div>
+      </form>
+
+      <div id="resultado" class="mt-4 text-sm text-blue-800"></div>
+    </div>
+      <script type="module" src="src/ejercicio4.ts"></script>
+    </body>
+  </main>
+</html>
