@@ -1,3 +1,4 @@
+import './output.css';
 class Cuenta {
     constructor(nombre, cantidad, tipoDeCuenta, numeroDeCuenta) {
         Object.defineProperty(this, "nombre", {
@@ -91,4 +92,3 @@ btnLimpiar.addEventListener("click", () => {
     document.getElementById("valorOperacion").value = "";
     resultado.textContent = "";
 });
-export {};
