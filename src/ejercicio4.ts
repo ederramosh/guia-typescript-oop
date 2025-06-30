@@ -1,3 +1,5 @@
+import './output.css'
+
 class Cuenta {
   private nombre: string;
   private cantidad: number;

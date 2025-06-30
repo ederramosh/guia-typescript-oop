@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/output.css" />
-    <title>Ejercicios Typescript</title>
+    <title>Ejercicios 5</title>
   </head>
   <main>
     <body class="bg-slate-300">
@@ -56,12 +56,22 @@
             </div>
           </div>
         </nav>
-        <div class="mt-10 space-y-5 text-xl text-gray-500">
-          <p><strong>Hecho por:</strong> Eder Alexander Ramos Henriquez</p>
-          <p>Favor tomar en consideracion que el primer ejercicio se puede ver en el codigo Tailwind y CSS utilizado, pero esto fue para efectos del ejercicio, los demas ejercicios fueron fue utilizado Tailwind</p>
-        </div>
+        <div class="bg-white p-6 mt-10 rounded shadow-md w-full max-w-lg">
+    <h1 class="text-2xl font-bold text-center">Registrar Empleado</h1>
+    <form id="formEmpleado" class="mt-10 space-y-4">
+      <input type="text" id="nombre" placeholder="Nombre" required class="w-full border rounded px-3 py-2" />
+      <input type="text" id="apellido" placeholder="Apellido" required class="w-full border rounded px-3 py-2" />
+      <input type="text" id="direccion" placeholder="Dirección" required class="w-full border rounded px-3 py-2" />
+      <input type="text" id="telefono" placeholder="Teléfono" required class="w-full border rounded px-3 py-2" />
+      <input type="number" id="edad" placeholder="Edad" required class="w-full border rounded px-3 py-2" />
+      <input type="number" id="sueldo" placeholder="Sueldo" required class="w-full border rounded px-3 py-2" />
+      <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Mostrar Datos</button>
+    </form>
+    <div id="resultado" class="mt-6 text-sm text-gray-800 whitespace-pre-wrap"></div>
+  </div>
+
       </div>
-      <script type="module" src="src/main.ts"></script>
+      <script type="module" src="./src/ejercicio5.ts"></script>
     </body>
   </main>
 </html>
